@@ -1,0 +1,20 @@
+float r = 0;
+
+void setup() {
+  size(400,400);
+  background (10);
+  smooth();
+  noStroke();
+  
+}
+
+void draw() {
+  fill(255);
+  rotate(r);
+  float circle_size = random(5,15);
+  ellipse(100 + r, 10, circle_size, circle_size);
+  r = r + 0.5;
+  println(r);
+  
+}
+  
